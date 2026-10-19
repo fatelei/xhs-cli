@@ -1,0 +1,5 @@
+node_modules/
+.xhs/
+*.har
+exports/
+work/**/evidence/*.js

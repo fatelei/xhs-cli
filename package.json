@@ -1,0 +1,10 @@
+{
+  "name": "xhs-creator-cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {"xhs": "bin/xhs.js"},
+  "scripts": {"test": "node --test", "start": "node bin/xhs.js"},
+  "engines": {"node": ">=22"},
+  "dependencies": {"playwright": "1.64.0"}
+}
