@@ -63,9 +63,9 @@ jobs:
       - name: Build executable
         run: >-
           npx --yes @yao-pkg/pkg@6.21.0
+          --sea
           --target node22-${{ matrix.target }}
-          --no-bytecode --public-packages "*" --public
-          --output dist/${{ matrix.filename }} bin/xhs.js
+          --output dist/${{ matrix.filename }} .
 
       - name: Check executable
         run: dist/${{ matrix.filename }} --help

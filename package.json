@@ -6,5 +6,8 @@
   "bin": {"xhs": "bin/xhs.js"},
   "scripts": {"test": "node --test", "start": "node bin/xhs.js"},
   "engines": {"node": ">=22"},
-  "dependencies": {"playwright": "1.64.0"}
+  "dependencies": {"playwright": "1.64.0"},
+  "pkg": {
+    "assets": ["node_modules/playwright-core/browsers.json"]
+  }
 }

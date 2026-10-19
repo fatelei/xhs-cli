@@ -1,9 +1,10 @@
-import { chromium } from 'playwright';
+import playwright from 'playwright';
 import { mkdir, chmod } from 'node:fs/promises';
 import { homedir } from 'node:os';
 import { join, resolve } from 'node:path';
 
 export const ORIGIN = 'https://creator.xiaohongshu.com';
+const { chromium } = playwright;
 
 export async function browserSession(o) {
   let browser, context;
